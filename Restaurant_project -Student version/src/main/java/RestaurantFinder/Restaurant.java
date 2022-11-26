@@ -77,4 +77,7 @@ public class Restaurant {
         return name;
     }
 
+    public int getOrderValue(List<Item> spoof) {
+        return 0;
+    }
 }
