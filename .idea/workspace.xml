@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d4d6811-0dbc-4490-a28c-f76c514856bf" name="Changes" comment="Part 2: Solution" />
+    <list default="true" id="6d4d6811-0dbc-4490-a28c-f76c514856bf" name="Changes" comment="Part 3: Solution" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -115,7 +115,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669451263130</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Part 3: Failing test case">
+      <created>1669451401316</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669451401316</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Part 3: Solution">
+      <created>1669451501689</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1669451501689</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -130,9 +144,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="Part 2: Solution" />
     <MESSAGE value="Part 3: Failing test case" />
     <MESSAGE value="Part 3: Solution" />
-    <MESSAGE value="Part 2: Solution" />
-    <option name="LAST_COMMIT_MESSAGE" value="Part 2: Solution" />
+    <option name="LAST_COMMIT_MESSAGE" value="Part 3: Solution" />
   </component>
 </project>
