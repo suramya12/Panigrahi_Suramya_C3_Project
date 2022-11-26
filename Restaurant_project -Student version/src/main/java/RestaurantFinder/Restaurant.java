@@ -1,16 +1,15 @@
 package RestaurantFinder;
 
-import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Restaurant {
-    private String name;
-    private String location;
+    private final String name;
+    private final String location;
     public LocalTime openingTime;
     public LocalTime closingTime;
-    private List<Item> menu = new ArrayList<Item>();
+    private final List<Item> menu = new ArrayList<>();
 
     public Restaurant(String name, String location, LocalTime openingTime, LocalTime closingTime) {
         this.name = name;
@@ -21,6 +20,7 @@ public class Restaurant {
         this.menu.add(new Item("Lemon Rice",73));
         this.menu.add(new Item("curd Rice",45));
     }
+
     public void setClosingTime(LocalTime closingTime) {
         this.closingTime = closingTime;
     }
@@ -29,14 +29,11 @@ public class Restaurant {
         LocalTime time = LocalTime.now();
         int isStillOpen = time.compareTo(closingTime);
         int isOpen = time.compareTo(openingTime);
-        if(isStillOpen<0&&isOpen>=0){
-            return true;
-        }
-        return false;
+        return isStillOpen < 0 && isOpen >= 0;
         //DELETE ABOVE STATEMENT AND WRITE CODE HERE
     }
 
-    public LocalTime getCurrentTime(){ return  LocalTime.now(); }
+    //public LocalTime getCurrentTime(){ return  LocalTime.now(); }
 
     public List<Item> getMenu() {
         return this.menu;
@@ -77,7 +74,12 @@ public class Restaurant {
         return name;
     }
 
-    public int getOrderValue(List<Item> spoof) {
-        return 0;
+    public int getOrderValue(List<Item> item){
+        int totalValue = 0;
+        for (Item myItem : item) {
+            totalValue += myItem.getPrice();
+        }
+        return totalValue;
     }
+
 }

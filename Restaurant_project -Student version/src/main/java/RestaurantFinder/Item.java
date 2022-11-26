@@ -1,8 +1,8 @@
 package RestaurantFinder;
 
 public class Item {
-    private String name;
-    private int price;
+    private final String name;
+    private final int price;
 
     public Item(String name, int price) {
         this.name = name;
@@ -10,8 +10,10 @@ public class Item {
     }
 
     public String getName() {
+
         return name;
     }
+
     @Override
     public String toString(){
         return  name + ":"
@@ -21,6 +23,8 @@ public class Item {
     }
 
     public int getPrice() {
-        return 0;
+
+        return price;
     }
+
 }
